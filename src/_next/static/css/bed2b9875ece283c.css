@@ -823,19 +823,19 @@ select {
   vertical-align: top;
 }
 .prose {
-  --tw-prose-body: #374151;
-  --tw-prose-headings: #111827;
-  --tw-prose-lead: #4b5563;
-  --tw-prose-links: #111827;
-  --tw-prose-bold: #111827;
-  --tw-prose-counters: #6b7280;
-  --tw-prose-bullets: #d1d5db;
+  --tw-prose-body: #0d0d0d;
+  --tw-prose-headings: #0d0d0d;
+  --tw-prose-lead: #0d0d0d;
+  --tw-prose-links: #0d0d0d;
+  --tw-prose-bold: #0d0d0d;
+  --tw-prose-counters: #0d0d0d;
+  --tw-prose-bullets: #0d0d0d;
   --tw-prose-hr: #e5e7eb;
-  --tw-prose-quotes: #111827;
+  --tw-prose-quotes: #0d0d0d;
   --tw-prose-quote-borders: #e5e7eb;
   --tw-prose-captions: #6b7280;
   --tw-prose-code: #111827;
-  --tw-prose-pre-code: #e5e7eb;
+  --tw-prose-pre-code: #0d0d0d;
   --tw-prose-pre-bg: #1f2937;
   --tw-prose-th-borders: #d1d5db;
   --tw-prose-td-borders: #e5e7eb;
