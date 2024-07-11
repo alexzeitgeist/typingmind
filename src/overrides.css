@@ -1,0 +1,6 @@
+.custom-theme .relative .rounded-lg form[action="https://codepen.io/pen/define"],
+.custom-theme .relative .rounded-lg form[action="https://codepen.io/pen/define"] + * {
+    display: none !important;
+}
+
+/* Add any other override styles here */
