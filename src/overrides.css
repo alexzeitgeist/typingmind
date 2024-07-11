@@ -1,6 +1,26 @@
-.custom-theme .relative .rounded-lg form[action="https://codepen.io/pen/define"],
-.custom-theme .relative .rounded-lg form[action="https://codepen.io/pen/define"] + * {
-    display: none !important;
+/* Set font family and remove text shadow for pre and code elements within prose-base */
+.prose-base pre,
+.prose-base pre code {
+    background: rgb(250, 247, 245) !important;
+    font-family: 'JetBrains Mono', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+    text-shadow: none !important;
 }
 
-/* Add any other override styles here */
+/* Style pre elements within prose-base excluding those within not-prose class */
+.prose-base :where(pre):not(:where([class~="not-prose"] *)) {
+    padding: 0;
+    font-size: 0.875em;
+    line-height: 1.5 !important;
+}
+
+/* Style code elements within prose-base excluding those within not-prose class */
+.prose-base :where(code):not(:where([class~="not-prose"] *)) {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Courier New, monospace;
+    font-size: 0.75em;
+}
+
+/* Hide form with specific action and its adjacent element within elements with ai-response data attribute */
+[data-element-id="ai-response"] form[action="https://codepen.io/pen/define"],
+[data-element-id="ai-response"] form[action="https://codepen.io/pen/define"] + * {
+    display: none !important;
+}
