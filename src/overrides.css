@@ -52,3 +52,27 @@
 .relative .group-hover\:opacity-100 span {
     display: none;
 }
+
+@media screen and (max-width: 767px) {
+  /* Hide the avatar on mobile devices */
+  [data-element-id="chat-avatar-container"] {
+    display: none !important;
+  }
+
+  /* Make the message content full width */
+  .response-block {
+    padding-left: 0.5rem !important; /* Reduce left padding */
+  }
+
+  /* Adjust the message content to take full width */
+  .response-block > .w-full {
+    width: 100% !important;
+  }
+
+  /* Ensure the message bubble takes full width */
+  [data-element-id="user-message"] {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
