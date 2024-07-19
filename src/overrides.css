@@ -1,3 +1,11 @@
+html, body {
+  overscroll-behavior: none;
+}
+
+* {
+  outline: 1px solid red;
+}
+
 /* Set font family and remove text shadow for pre and code elements within prose-base */
 .prose-base pre,
 .prose-base pre code {
