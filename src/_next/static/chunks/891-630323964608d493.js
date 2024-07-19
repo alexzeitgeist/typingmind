@@ -49860,6 +49860,8 @@
               arguments[1];
           arguments.length > 2 && arguments[2];
           var n = e;
+          n || (n = document.body.scrollHeight),
+            window.scrollTo(0, n);
         },
         mD = function (e, t) {
           mM(e, !1, t);
@@ -53793,7 +53795,7 @@
               }),
               (0, M.jsxs)("div", {
                 "data-element-id": "chat-space-middle-part",
-                style: { paddingBottom: sJ + 50 },
+                style: { paddingBottom: 160 },
                 className: u5(
                   "transition-all relative",
                   0 === sS
