@@ -2,8 +2,13 @@ html, body {
   overscroll-behavior: none;
 }
 
+::-webkit-scrollbar {
+  display: none !important;
+}
+
 * {
-  outline: 1px solid red;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
 
 /* Set font family and remove text shadow for pre and code elements within prose-base */
